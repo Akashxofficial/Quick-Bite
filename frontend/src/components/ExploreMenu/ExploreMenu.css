@@ -1,0 +1,90 @@
+/* ExploreMenu.css */
+
+.explore-menu {
+    width: 100%;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #0f172a, #000000, #0f172a);
+    text-align: center;
+}
+
+.explore-menu-title {
+    font-size: 45px;
+    font-weight: 800;
+    background: linear-gradient(to right, #8b5cf6, #ec4899, #ef4444, #22d3ee);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 25px;
+}
+
+.explore-menu-subtitle {
+    color: #cbd5e1;
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+.explore-menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    /* More space */
+    margin-bottom: 50px;
+}
+
+.explore-menu-item {
+    width: 180px;
+    /* Bigger now */
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
+    position: relative;
+}
+
+.explore-menu-item img {
+    width: 160px;
+    /* Bigger image */
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.explore-menu-item p {
+    color: #f1f5f9;
+    font-weight: 700;
+    margin-top: 15px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* 🚀 Ultra Gaming Hover Effect */
+.explore-menu-item:hover img {
+    transform: scale(1.3) rotate(3deg);
+    box-shadow: 0 0 25px 8px rgba(139, 92, 246, 0.8),
+        0 0 30px 12px rgba(236, 72, 153, 0.6);
+    border-color: #22d3ee;
+}
+
+/* 🟣 Active Styling */
+.active img {
+ 
+} */
+
+/* Divider */
+.explore-menu-divider {
+    margin-top: 40px;
+    border: none;
+    border-top: 2px solid #334155;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+<button onClick= {
+    scrollToMenu
+}
+
+className="px-8 py-3 bg-pink-600 text-white font-semibold rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:scale-110 hover:bg-pink-700 hover:shadow-pink-500/50"
+>View Menu </button>

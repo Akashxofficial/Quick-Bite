@@ -1,0 +1,74 @@
+.track-order-container {
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+    background:#141212;
+    /* Dark background */
+    color: #ffffff;
+    /* Light text */
+    border-radius: 16px;
+  
+    font-family: sans-serif;
+}
+
+.track-order-container h2 {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #ffffff;
+    /* Light color for heading */
+}
+
+.status-step {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-left: 4px solid #444444;
+    /* Lighter border */
+    background: #2a2a2a;
+    /* Dark background for each step */
+    border-radius: 6px;
+    position: relative;
+    font-size: 16px;
+}
+
+.status-step.completed {
+    border-color: #4caf50;
+    /* Green border for completed */
+    background: #3c763d;
+    /* Dark green background for completed */
+}
+
+.status-step.current {
+    border-color: #ff9800;
+    /* Orange border for current */
+    background: #3e3e3e;
+    /* Slightly lighter dark background for current */
+}
+
+.delivery-info {
+    margin-top: 20px;
+    background: #333333;
+    /* Dark background for delivery info */
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #ffffff;
+    /* Light text */
+}
+
+.help-btn {
+    display: block;
+    margin: 25px auto 0;
+    padding: 10px 20px;
+    background: #ff4d4d;
+    /* Red background */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.help-btn:hover {
+    background: #e60000;
+    /* Darker red on hover */
+}

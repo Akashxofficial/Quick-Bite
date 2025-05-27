@@ -1,0 +1,93 @@
+/* Header.css */
+.header {
+    width: 100%;
+    background: linear-gradient(to bottom, #000000, #1f1f1f, #000000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.header-contents {
+    text-align: center;
+}
+.header {
+    width: 100%;
+    background: linear-gradient(to bottom, #000000, #1f1f1f, #000000);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.header-contents {
+    text-align: center;
+}
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/headers_img.png') no-repeat;
+    color: #ffffff;
+    background-size: contain;
+    position: relative;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 40vw;
+    animation: fadeIn 3s;
+}
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,22px);
+}
+.header-contents p{
+    color: white;
+    font-size: 1vw;
+}
+/* Base style */
+button {
+    border: none;
+    color: #747474;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    /* Smooth transition */
+}
+
+/* Hover effect */
+button:hover {
+    color: #032917;
+    /* Change text color on hover */
+    background-color: #ffffff;
+    /* Background color change on hover */
+    box-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px rgba(2, 29, 80, 0.336);
+    /* Glowing effect */
+    transform: scale(1.05);
+    /* Slight zoom effect */
+}
+@media (max-width:1050px){
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width:750px){
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}

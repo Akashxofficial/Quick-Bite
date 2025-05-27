@@ -1,0 +1,136 @@
+/* --- Popup Overlay --- */
+.login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(15, 15, 15, 0.65);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    animation: popupFade 0.4s ease forwards;
+}
+
+/* --- Popup Box --- */
+.login-popup-container {
+    background: #121212;
+    padding: 45px 40px;
+    border-radius: 18px;
+    box-shadow: 0 0 30px rgba(0, 240, 255, 0.2), 0 0 60px rgba(0, 240, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: clamp(360px, 28vw, 460px);
+    color: #ccc;
+    font-size: 16px;
+    backdrop-filter: blur(3px);
+    position: relative;
+}
+
+/* --- Title Row --- */
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* --- Close Button --- */
+.login-popup-title img {
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    filter: invert(1);
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.login-popup-title img:hover {
+    opacity: 1;
+}
+
+/* --- Inputs Container --- */
+.login-popup-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* --- Each Input --- */
+.login-popup-inputs input {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 14px 18px;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-popup-inputs input:focus {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* --- Main Button --- */
+.login-popup-container button {
+    background: linear-gradient(135deg, #00f0ff, #0077ff);
+    padding: 14px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.login-popup-container button:hover {
+    background: linear-gradient(135deg, #0077ff, #00f0ff);
+    box-shadow: 0 0 20px #00f0ff;
+}
+
+/* --- Terms and Conditions --- */
+.login-popup-condition {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 13px;
+    color: #777;
+    margin-top: -5px;
+}
+
+.login-popup-condition input {
+    margin-top: 4px;
+}
+
+/* --- Already have an account text --- */
+.login-popup p {
+    font-size: 14px;
+    text-align: center;
+    color: #777;
+}
+
+.login-popup p span {
+    color: #00f0ff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --- Animations --- */
+@keyframes popupFade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

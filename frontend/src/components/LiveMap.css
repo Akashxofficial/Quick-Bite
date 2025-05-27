@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+/* Dark body setup */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  font-family: 'Orbitron', sans-serif;
+  color: #f5f5f5;
+}
+
+/* Centered container */
+.map-container {
+  max-width: 420px;
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Card with gaming style */
+.tracking-card {
+  background: #111;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #0ff2ff33, 0 0 10px #ff007744;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tracking-card:hover {
+  transform: scale(1.02);
+}
+
+/* Title */
+.tracking-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0ff2ff;
+  text-shadow: 0 0 5px #0ff2ff88;
+  margin-bottom: 12px;
+}
+
+/* Subtext */
+.tracking-card p {
+  font-size: 15px;
+  color: #ccc;
+  margin: 5px 0;
+}
+
+/* Google map styling (optional border radius fix) */
+iframe,
+.map {
+  border-radius: 12px;
+  width: 100%;
+}
+
+/* Button group */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+/* Neon buttons */
+.actions button {
+  flex: 1;
+  background: linear-gradient(135deg, #ff0077, #ff5577);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff0077aa;
+  transition: all 0.2s ease-in-out;
+}
+
+.actions button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #ff0077;
+}
+
+/* Order Details button (black neon) */
+.details-btn {
+  margin-top: 18px;
+  width: 100%;
+  background: #0a0a0a;
+  color: #0ff2ff;
+  border: 2px solid #0ff2ff;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 0 8px #0ff2ff66;
+}
+
+.details-btn:hover {
+  background-color: #0ff2ff11;
+  box-shadow: 0 0 15px #0ff2ff;
+}
+
+/* Responsive fix */
+@media (max-width: 480px) {
+  .map-container {
+    margin: 20px auto;
+    max-width: 92%;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+}
+
+/* Optional: Import Orbitron font (gaming style) */

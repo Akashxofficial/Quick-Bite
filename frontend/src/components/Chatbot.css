@@ -1,0 +1,43 @@
+.food-launcher {
+    background: linear-gradient(135deg, #000000, #000000);
+    color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    transform: scale(1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 9999;
+}
+
+.food-launcher.open {
+    transform: scale(0.8) rotate(15deg);
+    background: linear-gradient(135deg, #000000, #000000);
+    bottom: 320px;
+    /* Button upar uth jayega jab chatbot khula ho */
+    right: 30px;
+}
+
+.food-launcher:hover {
+    transform: scale(1.2);
+    background: linear-gradient(135deg, #000000, #000000);
+}
+
+/* Chat window position thoda adjust kro */
+.rcw-widget-container {
+    bottom: 100px !important;
+    /* Chatbot ki height ke hisaab se adjust */
+    right: 25px !important;
+}
+
+/* Hide default launcher */
+.rcw-launcher {
+    display: none !important;
+}
