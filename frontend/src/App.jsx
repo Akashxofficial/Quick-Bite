@@ -9,9 +9,9 @@ import LoginPopup from './components/LoginPopup/LoginPopup';
 import Verify from './pages/Verify/Verify';
 import MyOrders from './pages/MyOrders/MyOrders';
 import Chatbot from './components/Chatbot';
-import { motion } from 'framer-motion';
+
 import './App.css';
-import 'leaflet/dist/leaflet.css';
+
 
 import CursorEffect from './components/CursorEffect';
 
